@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="invoice">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="invoice-item">
+              <h3 class="invoice-heading py-3 text-center">Invoice</h3>
+              <form>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Customer</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter customer name"
+                    id="customer"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Address</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Full address"
+                    id="address"
+                  />
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="invoice-city">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">City</span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Enter city"
+                          id="city"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="invoice-date">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">Date</span>
+                        <input type="date" class="form-control" id="date" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <div class="invoice-add-item">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">Add item</span>
+                        <input type="text" class="form-control" id="item" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="invoice-quntity">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">Quntity</span>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="quntity"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="invoice-quntity">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">Amount</span>
+                        <input type="number" class="form-control" id="amount" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="row">
+                <div class="col-6">
+                  <div class="invoice-print">
+                    <a
+                      href="javascript:void(0)"
+                      class="btn btn-primary text-decoration-none"
+                      >Print</a
+                    >
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="invoice-amount">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">Total</span>
+                      <input type="text" class="form-control" id="total" />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">GST</span>
+                      <input type="number" class="form-control" id="gst" />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">Net amount</span>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="netamount"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="invoice-data-show">
+              <h3 class="py-3 text-center">Invoice</h3>
+              <div class="mb-3">
+                <span>Customer:</span>
+              </div>
+              <div class="mb-3">
+                <span>Address:</span>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="mb-3">
+                    <span>City:</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <span>Date:</span>
+                  </div>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Items</th>
+                    <th scope="col">Quntity</th>
+                    <th scope="col">Amount</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <span>Total</span>
+                  </div>
+                  <div class="mb-3">
+                    <span>GST</span>
+                  </div>
+                  <div class="mb-3">
+                    <span>Net amount</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

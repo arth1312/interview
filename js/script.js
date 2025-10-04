@@ -1,0 +1,10 @@
+document.getElementById(customer);
+document.getElementById(address);
+document.getElementById(city);
+document.getElementById(date);
+document.getElementById(item);
+document.getElementById(quntity);
+document.getElementById(amount);
+document.getElementById(total);
+document.getElementById(gst);
+document.getElementById(netamount);
